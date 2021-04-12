@@ -1,11 +1,11 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "m_user")
-public class User extends CommonEntity{
+public class User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

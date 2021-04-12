@@ -1,4 +1,4 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -14,7 +14,7 @@ public class Token extends CommonEntity{
     @Column(name = "email",length = 100, nullable = true)
     private String Email;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "user_id", insertable = false, updatable = false)
     public User user;
 

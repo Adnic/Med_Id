@@ -1,4 +1,4 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import javax.persistence.*;
 
@@ -9,23 +9,23 @@ public class Doctor extends CommonEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private long Id;
+    private Long Id;
 
     @OneToOne
     @JoinColumn(name = "biodata_id", insertable = false, updatable = false)
     public Biodata biodata;
 
     @Column(name = "biodata_id", nullable = true)
-    private long BiodataId;
+    private Long BiodataId;
 
     @Column(name = "str", length = 50, nullable = true)
     private String Str;
 
-    public long getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         Id = id;
     }
 
@@ -37,11 +37,11 @@ public class Doctor extends CommonEntity {
         this.biodata = biodata;
     }
 
-    public long getBiodataId() {
+    public Long getBiodataId() {
         return BiodataId;
     }
 
-    public void setBiodataId(long biodataId) {
+    public void setBiodataId(Long biodataId) {
         BiodataId = biodataId;
     }
 

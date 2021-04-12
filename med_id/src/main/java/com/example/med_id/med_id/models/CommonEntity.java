@@ -1,4 +1,4 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -14,7 +14,7 @@ public class CommonEntity {
     private Date createdOn;
 
     @Column(name = "created_by", nullable = false)
-    private long createdBy;
+    private Long createdBy;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
@@ -22,15 +22,15 @@ public class CommonEntity {
     private Date modifiedOn;
 
     @Column(name = "modified_by", nullable = true)
-    private long modifiedBy;
+    private Long modifiedBy;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "deleted_on", nullable = true)
     private Date deletedOn;
 
-    @Column(name = "deleted_by", nullable = true)
-    private long deletedBy;
+    @Column(name = "deleted_by")
+    private Long deletedBy;
 
     @Column(name = "is_delete", nullable = false)
     private Boolean isDelete = false;
@@ -43,11 +43,11 @@ public class CommonEntity {
         this.createdOn = createdOn;
     }
 
-    public long getCreatedBy() {
+    public Long getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(long createdBy) {
+    public void setCreatedBy(Long createdBy) {
         this.createdBy = createdBy;
     }
 
@@ -59,11 +59,11 @@ public class CommonEntity {
         this.modifiedOn = modifiedOn;
     }
 
-    public long getModifiedBy() {
+    public Long getModifiedBy() {
         return modifiedBy;
     }
 
-    public void setModifiedBy(long modifiedBy) {
+    public void setModifiedBy(Long modifiedBy) {
         this.modifiedBy = modifiedBy;
     }
 
@@ -75,11 +75,11 @@ public class CommonEntity {
         this.deletedOn = deletedOn;
     }
 
-    public long getDeletedBy() {
+    public Long getDeletedBy() {
         return deletedBy;
     }
 
-    public void setDeletedBy(long deletedBy) {
+    public void setDeletedBy(Long deletedBy) {
         this.deletedBy = deletedBy;
     }
 

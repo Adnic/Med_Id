@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Med id</title>
+</head>
+
+<body>
+<div sec:authorize="hasRole('ROLE_DOKTER')">
+    <div th:fragment="content2" id="main1">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/044-record.svg  " width="130" height="130" alt="">
+                    <h5>Janji Pasien</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/002-report.svg " width="130" height="130" alt="">
+                    <h5>Chat Pasien</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="/doctortreatment/" class="text-decoration-none">
+                    <img src="/img/005-stethoscope.svg " width="130" height="130" alt="">
+                    <h5>Tindakan</h5></a>
+
+            </div>
+            <div class="col-md-2 text-center ">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/specialist.svg" width="130" height="130" alt="">
+                    <h5>Spesialisasi</h5></a>
+            </div>
+            <div class="col-md-2 text-center ">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/setting.svg" width="130" height="130" alt="">
+                    <h5>Pengaturan</h5></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div sec:authorize="hasRole('ROLE_PASIEN')">
+    <div th:fragment="content1" id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="row align-items-center">
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/044-record.svg " width="130" height="130" alt="">
+                    <h5>Buat Janji</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/002-report.svg " width="130" height="130" alt="">
+                    <h5>Konsultasi Dokter</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/019-caduceus.svg"  width="130" height="130" alt="">
+                    <h5>Cari Dokter</h5></a>
+            </div>
+            <div class="col-md-2 text-center ">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/038-medicine.svg" width="130" height="130" alt="">
+                    <h5>Cari Obat</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="/customerregistered/" class="text-decoration-none">
+                    <img src="/img/payment-method.svg" width="130" height="130" alt="">
+                    <h5>Pembayaran</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="img/withdraw-money.svg" style="margin-top: 30px;" width="130" height="130" alt="">
+                    <h5>Tarik Saldo</h5></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div th:fragment="content" id="main3">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="row align-items-center">
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/044-record.svg " width="130" height="130" alt="">
+                    <h5>Buat Janji</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/002-report.svg " width="130" height="130" alt="">
+                    <h5>Konsultasi Dokter</h5></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/019-caduceus.svg"  width="130" height="130" alt="">
+                    <h5>Cari Dokter</h5></a>
+            </div>
+            <div class="col-md-2 text-center ">
+                <a href="#" class="text-decoration-none">
+                    <img src="/img/038-medicine.svg" width="130" height="130" alt="">
+                    <h5>Cari Obat</h5></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import javax.persistence.*;
 import java.sql.Blob;
@@ -63,4 +63,18 @@ public class Biodata extends CommonEntity{
     public void setImagePath(String imagePath) {
         ImagePath = imagePath;
     }
+
+    @OneToOne(mappedBy = "biodata", optional = false)
+    private Doctor doctor;
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
 }
+
+
+

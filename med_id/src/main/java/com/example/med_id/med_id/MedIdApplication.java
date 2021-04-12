@@ -1,4 +1,4 @@
-package com.example.med_id.med_id;
+package com.example.med_id.Med_Id;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,113 +1,91 @@
-
-.btn-outline-success{
-    background: rgb(81, 179, 236);
-    border: 0;
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    border-color: #843534 !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
 }
 
-.btn-primary:hover {
-    background: rgb(81, 179, 236);
-    border: 0;
-    font-family: 'Poppins';
-    font-weight: 400;
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #616161 !important;
+    background-color: #fff !important;
+    border: 1px solid #ababab !important;
 }
 
-.btn-primary {
-    font-family: 'Poppins';
-    font-weight: 400;
-}
-
-.btn-outline-primary{
-    font-family: 'Poppins';
-    font-weight: 400;
-}
-
-.btn-secondary:hover {
-    background: none;
-    border: 1px solid rgb(159, 177, 197);
-    color: #173A56;
-}
-
-.heromed h5 {
-    font-family: 'Poppins';
-    font-weight: 400;
-    color: #1ccbe2;
-}
-
-.navbar {
- z-index: 1;
-}
-.navbar-nav .nav-link {
-    color: #2F281E;
+input.parsley-error:focus,
+select.parsley-error:focus,
+textarea.parsley-error:focus {
+    border-color: #843534 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483 !important;
 }
 
 
-html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #c3f0ff;
-  }
-
-
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: -1;
-    background-color: #c3f0ff;
-    overflow-x: hidden;
-    padding-top: 120px;
-    padding-left: 30px;
-
-  }
-
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
+ul.parsley-errors-list{
+    size: 10px !important;
+    color: #843534 !important;
     text-decoration: none;
-    font-size: 25px;
-    color: #098cb4;
-    display: block;
-  }
-
-@media only screen and (max-width: 1024px) {
-  .double-nav .breadcrumb-dn {
-    display: none;
-  }
+}
+ul.parsley-errors-list li{
+    list-style-type:none !important;
 }
 
-  .main {
-    margin-left: 50px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 20px 20px;
-  }
+/*.col-2dot4,*/
+/*.col-sm-2dot4,*/
+/*.col-md-2dot4,*/
+/*.col-lg-2dot4,*/
+/*.col-xl-2dot4 {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    min-height: 1px;*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*}*/
+/*.col-2dot4 {*/
+/*    -webkit-box-flex: 0;*/
+/*    -ms-flex: 0 0 20%;*/
+/*    flex: 0 0 20%;*/
+/*    max-width: 20%;*/
+/*}*/
+/*@media (min-width: 540px) {*/
+/*    .col-sm-2dot4 {*/
+/*        -webkit-box-flex: 0;*/
+/*        -ms-flex: 0 0 20%;*/
+/*        flex: 0 0 20%;*/
+/*        max-width: 20%;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 720px) {*/
+/*    .col-md-2dot4 {*/
+/*        -webkit-box-flex: 0;*/
+/*        -ms-flex: 0 0 20%;*/
+/*        flex: 0 0 20%;*/
+/*        max-width: 20%;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 960px) {*/
+/*    .col-lg-2dot4 {*/
+/*        -webkit-box-flex: 0;*/
+/*        -ms-flex: 0 0 20%;*/
+/*        flex: 0 0 20%;*/
+/*        max-width: 20%;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1140px) {*/
+/*    .col-xl-2dot4 {*/
+/*        -webkit-box-flex: 0;*/
+/*        -ms-flex: 0 0 20%;*/
+/*        flex: 0 0 20%;*/
+/*        max-width: 20%;*/
+/*    }*/
+/*}*/
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  
-.heromed {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 187px;
-}
+/*.footer {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 60px; !* Set the fixed height of the footer here *!*/
+/*    line-height: 60px; !* Vertically center the text there *!*/
+/*    background-color: #c3f0ff;*/
+/*}*/

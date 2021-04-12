@@ -1,4 +1,4 @@
-package com.example.med_id.med_id.models;
+package com.example.med_id.Med_Id.models;
 
 import javax.persistence.*;
 

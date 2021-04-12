@@ -1,5 +1,4 @@
-package com.example.med_id.med_id.models;
-
+package com.example.med_id.Med_Id.models;
 import javax.persistence.*;
 
 @Entity
@@ -10,14 +9,14 @@ public class DoctorTreatment extends CommonEntity{
     @Column(name = "id", nullable = false)
     private Long Id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "doctor_id", insertable = false, updatable = false)
     public Doctor doctor;
 
     @Column(name = "doctor_id", nullable = true)
-    private long DoctorId;
+    private Long DoctorId;
 
-    @Column(name = "name",length = 50, nullable = true)
+    @Column(name = "name", length = 50, nullable = true)
     private String Name;
 
     public Long getId() {
@@ -36,11 +35,11 @@ public class DoctorTreatment extends CommonEntity{
         this.doctor = doctor;
     }
 
-    public long getDoctorId() {
+    public Long getDoctorId() {
         return DoctorId;
     }
 
-    public void setDoctorId(long doctorId) {
+    public void setDoctorId(Long doctorId) {
         DoctorId = doctorId;
     }
 
