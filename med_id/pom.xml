@@ -7,12 +7,11 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
-
 	</parent>
-	<groupId>com.example.med_id</groupId>
-	<artifactId>Med_Id</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>med_id</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Med_Id</name>
+	<name>med_id</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -60,8 +59,6 @@
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
 	</dependencies>
-
-
 
 	<build>
 		<plugins>

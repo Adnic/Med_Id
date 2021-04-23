@@ -13,16 +13,9 @@
 </head>
 <body class="bg-light">
     <div th:insert="~{fragments/navbar :: navbar}"></div>
-
-    <div class="container-fluid">
-        <div class="row h-100">
-            <div class="col-md-10">
-                <div class="px-4">
-                    <div th:insert="~{fragments/content :: content}"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <section class="heromed mt-5">
+            <div th:insert="~{fragments/content :: content}" ></div>
+            </section>
 
     <footer th:insert="~{fragments/footer :: footer}" class="footer" />
 </body>

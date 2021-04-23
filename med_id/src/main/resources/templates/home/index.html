@@ -23,8 +23,10 @@
 <body class="bg-light">
 <div th:insert="~{fragments/navbar :: navbar}"></div>
 
-<div class="container">
-    <div th:insert="~{fragments/content :: content}"></div>
+<div >
+    <div class="px-4">
+    <div class="container-fluid" th:insert="~{fragments/content :: content}"></div>
+    </div>
 </div>
 
 <!--  Modal login  -->
